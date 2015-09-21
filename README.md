@@ -23,7 +23,7 @@ Then for each rule, randomly generate its tag, which indicates what kind of rule
 >> 3 represents push rule: u, v -> u + b, (v + d) (v + f)
 
 >> 4 represents simple-push rule: u, \epsilon -> u + b, a
->>
+
 Then generate a random rule of this tag:
 
 >> b, c, d, f are random vectors of integer numbers with each dimension from [-10, 10].
