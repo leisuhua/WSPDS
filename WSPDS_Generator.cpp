@@ -28,9 +28,6 @@ int main(int argc, const char * argv[]) {
 		out << tag << " ";
 		switch (tag) {
 		case 0:
-			//consta 是 dimension纬向量，该怎么随机生成？
-			//!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-			//coeffq = 1, constq = (rand() % (10 - (-10) + 1)) - 10, coeffa = 1;
 			coeffq = 1, coeffa = 1;
 			//先写一部分
 			out << coeffq << " " << coeffa;
@@ -77,7 +74,6 @@ int main(int argc, const char * argv[]) {
 			record << "</tr></table>";
 			break;
 		case 2:
-			//consta 是 dimension纬向量，该怎么随机生成？
 			coeffq = 1,
 				coeffa1 = 1, coeffa2 = 1;
 			out << coeffq << " " << coeffa1 << " " << coeffa2;
@@ -105,7 +101,7 @@ int main(int argc, const char * argv[]) {
 			record << "</tr></table>";
 			break;
 		case 3:
-			//consta1, consta2 是 dimension纬向量，该怎么随机生成？
+			//consta1, consta2 是 dimension纬向量
 			coeffq = 1, coeffa1 = 1,coeffa2 = 1;
 			out << coeffq << " " << coeffa1 << " " << coeffa2;
 			record << "<table width='100%' border='1' cellspacing='1' cellpadding='1' borderColor=#0000FF><tr>"
@@ -177,11 +173,7 @@ int main(int argc, const char * argv[]) {
 	}
 
 
-	int initp;
-
-	
-	//consts1, consts2 是 dimension纬向量，该怎么随机生成？
-	int consts1, consts2;
+	int initp, consts1, consts2;
 
 	//out << "5 " << initp; // tag 5 indicate initial state
 	out << "5";
